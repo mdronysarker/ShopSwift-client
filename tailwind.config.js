@@ -10,7 +10,7 @@ export default {
         },
 
         menuColor: {
-          500: "#444",
+          700: "#444",
         },
 
         mainColor: {

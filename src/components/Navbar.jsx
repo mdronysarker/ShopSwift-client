@@ -40,7 +40,7 @@ export default function Navbar() {
                 </span>
               </div>
               {show && (
-                <ul className="absolute w-[141.6px] bg-menubg-700 text-[14px] text-[#fff]">
+                <ul className="absolute w-[141.6px] bg-menubg-700 text-[14px] text-[#fff] mt-[10px]">
                   <li className="py-2 px-3 hover:bg-mainColor-700">
                     My Account
                   </li>
