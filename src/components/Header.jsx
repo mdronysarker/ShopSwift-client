@@ -4,6 +4,8 @@ import Flex from "./ShareComponents/Flex";
 import Image from "./ShareComponents/Image";
 import { FaSearch } from "react-icons/fa";
 import { HiMiniShoppingBag } from "react-icons/hi2";
+import { NavLink } from "react-router-dom";
+import Menudata from "../data/Menudata";
 
 export default function Header() {
   return (
@@ -15,28 +17,17 @@ export default function Header() {
           </div>
           <div className="w-[70%] bg-white">
             <Flex className="items-center justify-between">
-              <div>
-                <ul className="flex items-center justify-end p-x-8 text-menuColor-700 font-semibold ">
-                  <li className="bg-menubg-700 px-[20px] py-5 text-[14px] text-white hover:bg-menubg-700 hover:text-white transition duration-300 ease-out">
-                    HOME
-                  </li>
-                  <li className=" px-[20px] py-5 text-[14px] hover:bg-menubg-700 hover:text-white transition duration-300 ease-out ">
-                    FASHION
-                  </li>
-                  <li className=" px-[20px] py-5 text-[14px] hover:bg-menubg-700 hover:text-white transition duration-300 ease-out ">
-                    MAN
-                  </li>
-                  <li className=" px-[20px] py-5 text-[14px] hover:bg-menubg-700 hover:text-white transition duration-300 ease-out ">
-                    WOMAN
-                  </li>
-                  <li className=" px-[20px] py-5 text-[14px] hover:bg-menubg-700 hover:text-white transition duration-300 ease-out ">
-                    BLOG
-                  </li>
-                  <li className=" px-[20px] py-5 text-[14px] hover:bg-menubg-700 hover:text-white transition duration-300 ease-out ">
-                    CONTACT
-                  </li>
-                </ul>
-              </div>
+              <nav className="flex items-center justify-end p-x-8 text-menuColor-700 font-semibold">
+                {Menudata?.map((item) => (
+                  <NavLink
+                    className="px-[20px] py-5 text-[14px] hover:bg-menubg-700 hover:text-white transition duration-300 ease-out"
+                    to={item.url}
+                    key={item.title}
+                  >
+                    {item.title}
+                  </NavLink>
+                ))}
+              </nav>
               <div className="flex items-center gap-3 py-4 ml-3">
                 <FaSearch className="text-mainColor-700" />
                 <input
