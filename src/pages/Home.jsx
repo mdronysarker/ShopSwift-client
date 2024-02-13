@@ -1,14 +1,13 @@
-import React from "react";
-import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Heading from "../components/Heading";
 import Add from "../components/Add";
+import Newarrival from "../components/Newarrival";
 
 export default function Home() {
   return (
     <div>
       <Banner />
       <Add />
+      <Newarrival />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import Image from "./ShareComponents/Image";
 
 export default function Add() {
   return (
-    <div className="max-w-[1600px] mx-auto">
+    <div className="max-w-[1600px] mx-auto mt-[35px] mb-[60px] ">
       <Flex className="gap-8">
         <div className="w-[50%]">
           <Image src="./images/man.jpg" />
