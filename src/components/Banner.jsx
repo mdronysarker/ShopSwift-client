@@ -92,45 +92,25 @@ export default function Banner() {
   };
 
   return (
-    <Container>
-      <Slider {...settings}>
-        <div>
-          <Image className="h-[500px]" src="/images/slider-111.jpg">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg ">
-              <h2 className="text-[60px] font-bold">Hello There !</h2>
-              <h3 className="mt-[20px]  text-[40px]">Welcome to Conda Shop</h3>
-              <h5 className="text-[22px] my-3">Lets Shoping</h5>
-              <Link className="bg-mainColor-700 py-[10px] px-[10px] rounded-[5px] hover:underline">
-                Shop Now
-              </Link>
-            </div>
-          </Image>
-        </div>
-        <div>
-          <Image className="h-[500px]" src="/images/slide-bg-4.jpg">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg ">
-              <h2 className="text-[60px] font-bold">Eltronic products !</h2>
-              <h3 className="mt-[20px]  text-[40px]">Explore Top Seller</h3>
-              <h5 className="text-[22px] my-3">Lets Shoping</h5>
-              <Link className="bg-mainColor-700 py-[10px] px-[10px] rounded-[5px] hover:underline">
-                Shop Now
-              </Link>
-            </div>
-          </Image>
-        </div>
-        <div>
-          <Image className="h-[500px]" src="/images/slider-333.jpg">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg ">
-              <h2 className="text-[60px] font-bold">New Arrival</h2>
-              <h3 className="mt-[20px]  text-[40px]">Winter Collection</h3>
-              <h5 className="text-[22px] my-3">Love it & enjoy it</h5>
-              <Link className="bg-mainColor-700 py-[10px] px-[10px] rounded-[5px] hover:underline">
-                Shop Now
-              </Link>
-            </div>
-          </Image>
-        </div>
-      </Slider>
-    </Container>
+    <Slider {...settings}>
+      <div>
+        <Image className="" src="/images/slide-1.jpg"></Image>
+      </div>
+      <div>
+        <Image className="" src="/images/slide-2.jpg"></Image>
+      </div>
+      <div>
+        <Image className="h-[696px] w-[1688px]" src="/images/slider-333.jpg">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg ">
+            <h2 className="text-[60px] font-bold">New Arrival</h2>
+            <h3 className="mt-[20px]  text-[40px]">Winter Collection</h3>
+            <h5 className="text-[22px] my-3">Love it & enjoy it</h5>
+            <Link className="bg-mainColor-700 py-[10px] px-[10px] rounded-[5px] hover:underline">
+              Shop Now
+            </Link>
+          </div>
+        </Image>
+      </div>
+    </Slider>
   );
 }
